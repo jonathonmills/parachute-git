@@ -1,0 +1,111 @@
+/*
+Theme Name: Realia
+Theme URI: http://wp.realia.byaviators.com
+Description: Responsive Real Estate WordPress Theme
+Author: Aviators
+Author URI: http://byaviators.com
+Version: 2.2.0
+Tags: real estate, agent, front end submission, property, directory
+License: GNU General Public License
+License URI: http://www.gnu.org/licenses/gpl.html
+*/
+
+/*
+For CSS processing we are using SASS files located in assets/sass. If you familiar with the SASS
+feel free to compile our code. If not please write here your custom CSS to overwrite our code.
+*/
+
+.center             { text-align: center; }
+.aligncenter        { margin: auto; text-align: center; margin-bottom: 22px; display: block !important;}
+.alignleft          { float: left; margin: 0px 30px 22px 0px;  }
+.alignright         { float: right; margin: 0px 0px 22px 30px; }
+
+.left               { float:left;  }
+.right              { float:right; }
+
+small               { font-size: 11px; line-height: 14px; }
+strong              { font-weight: bold;}
+b                   { font-weight: bold; }
+
+.normal             { font-weight: normal; }
+.hidden             { display: none; }
+.wp-caption         { }
+.wp-caption-text    { }
+.sticky             { }
+.gallery-caption    { }
+.bypostauthor       { }
+
+.content-bottom-wrapper{
+	margin-top:35px;
+}
+
+.icon{
+	height:50px; width:270px;
+	text-align:center;
+}
+
+.logo img{
+	max-height:90px;	
+}
+
+.content-box .content h3{
+	text-align:center;
+}
+
+#header-wrapper #header #header-inner .navbar .navbar-inner .list-your-property {
+float: right;
+margin-top: 24px;
+margin-left:24px;
+}
+
+.top-social{
+	float:right !important;
+}
+
+.top-social li{
+	background-image: none;
+	display: inline-block;
+	margin-left: 20px;
+}
+
+.top-social li img{
+	height:27px;
+	width:auto;
+	max-width:100% !important; 
+}
+
+.top-social a{
+	-webkit-transition: opacity 0.2s linear;
+-moz-transition: opacity 0.2s linear;
+-o-transition: opacity 0.2s linear;
+transition: opacity 0.2s linear;
+background-position: center center;
+background-repeat: no-repeat;
+display: block;
+height: 100%;
+opacity: 0.8;
+color: #fff;
+line-height: 23px;
+padding: 6px 0px;
+}
+
+.top-social .facebook {
+background-image: url("/assets/img/share/facebook@2x.png");
+}
+
+
+@media (min-width: 940px) {
+
+.home .top  .top-inner h2{
+	display:none;	
+}
+
+.home .top  .top-inner .property-filter{	
+	width:300px;
+	float:right;
+	margin:-440px 10% 0;
+	z-index:1000000;
+	position:relative;
+}
+
+}

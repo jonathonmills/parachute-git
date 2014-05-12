@@ -1,0 +1,16 @@
+{% if amenities %}
+    <div class="row">
+        <div class="span9">
+            <h2>{{ wp.__('General amenities', 'aviators') }}</h2>
+
+            <div class="row">
+                {% for column in amenities %}
+
+                        {% for amenity in column %}
+                            <li class="span2 {% if wp.has_term(amenity.term_id, 'amenities', post.ID) %}checked{% else %}plain{% endif %}">{{ amenity.name }}</li>
+                        {% endfor %}
+                {% endfor %}
+            </div><!-- /.row -->
+        </div><!-- /.span12 -->
+    </div><!-- /.row -->
+{% endif %}

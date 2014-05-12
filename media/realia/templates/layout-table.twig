@@ -1,0 +1,144 @@
+{{ wp.get_header() }}
+
+<div id="content" class="clearfix">
+    {% if wp.is_active_sidebar('top') %}
+        {{ wp.get_sidebar('top') }}
+    {% endif %}
+
+    <div class="container">
+	
+	<div class="price-table">
+	
+		<div class="row">
+		
+			<div class="span12">
+				<p>Advertise your own property</p><p>See pricing below, we have a package that suits everyone.</p>
+			</div>
+		
+		</div>
+		
+		{% include 'helpers/messages.twig' %}
+	
+       <div class="row">
+
+		<div class="span4"><p>Bronze</p></div>
+		<div class="span4"><p>Silver</p></div>
+		<div class="span4"><p>Gold</p></div>
+		
+		</div>
+		
+		<div class="row">
+		
+		<div class="span4"><p>£50+VAT</p></div>
+		<div class="span4"><p>£150+VAT</p></div>
+		<div class="span4"><p>£295+VAT</p></div>
+		
+		</div>
+		
+		<div class="row">
+		
+		<div class="span4 white"><p>1 advert</p></div>
+		<div class="span4 white"><p>8 adverts</p></div>
+		<div class="span4 white"><p>11 adverts**</p></div>
+		
+		</div>
+		
+		<div class="row">
+		
+		<div class="span4 white"><p>Listed on: Empire Property</p></div>
+		<div class="span4 white"><p>Listed on: Empire Property</p></div>
+		<div class="span4 white"><p>Listed on: Empire Property</p></div>
+		
+		</div>
+		
+		<div class="row">				
+		<div class="span4" style="background-color: transparent;"></div>
+		<div class="span4 white"><div class="smaller">Also listed on: Rightmove, S1 Homes, Zoopla, Letting Web, Find a Property, Prime Location, City Lets</div></div>
+		<div class="span4 white"><div class="smaller">Also listed on: Rightmove, S1 Homes, Zoopla, Letting Web, Find a Property, Prime Location, City Lets</div></div>
+		</div>
+		
+		<div class="row">
+		
+		<div class="span4" style="background-color: transparent;"></div>
+		<div class="span4" style="background-color: transparent;"></div>
+		<div class="span4 white" style="background-color: #fff;"><div class="smaller">** + High Street Window Advert<br> Board<br> Social Media<br> Accompanied Viewings</div></div>
+
+       </div><!-- /.row -->
+	
+	<div class="interested">
+	<h2>Interested?</h2>
+	
+	<p>Leave all your details below of the property you wish to advertise and once accepted, one of our members of staff will call you with regards to payment.</p>
+	
+	<p>You can pay over the phone by debit or credit card or within our letting shop in Wishaw but all property details must be entered online. Payments can be made through PayPal too. Customers will be charged VAT at 20%. </p>
+	</div>
+	
+	</div>
+	
+
+	<div class="price-table-respo">
+	
+		<div class="row">
+		
+			<div class="span12">
+				<p>Advertise your own property - See pricing below, we have a package that suits everyone.</p>
+			</div>
+		
+		</div>
+		
+		{% include 'helpers/messages.twig' %}
+	
+       <div class="row">
+
+		<div class="light-blue clearfix">
+			<div class="span4"><p><strong>Bronze</strong></p></div>
+			<div class="span4" style="background-color: rgba(255,255,255,0.5);"><p>£50+VAT</p></div>
+			<div class="span4" style="background-color: rgba(255,255,255,0.5);"><p>1 advert</p></div>
+			<div class="span4" style="background-color: rgba(255,255,255,0.5);"><p>Listed on: Empire Property</p></div>
+		</div>
+		
+		<div class="mid-blue clearfix">
+		<div class="span4"><p><strong>Silver</strong></p></div>
+		<div class="span4" style="background-color: rgba(255,255,255,0.5);"><p>£150+VAT</p></div>	
+		<div class="span4" style="background-color: rgba(255,255,255,0.5);"><p>8 adverts</p></div>	
+		<div class="span4" style="background-color: rgba(255,255,255,0.5);"><div class="smaller">Listed on: Empire Property, Rightmove, S1 Homes, Zoopla, Letting Web, Find a Property, Prime Location, City Lets</div></div>
+		</div>
+		
+		
+		<div class="dark-blue clearfix">
+		<div class="span4"><p><strong>Gold</strong></p></div>
+		<div class="span4" style="background-color: rgba(255,255,255,0.5);"><p>£250+VAT</p></div>
+		<div class="span4" style="background-color: rgba(255,255,255,0.5);"><p>8 adverts**</p></div>
+		<div class="span4" style="background-color: rgba(255,255,255,0.5);"><div class="smaller">Listed on: Empire Property, Rightmove, S1 Homes, Zoopla, Letting Web, Find a Property, Prime Location, City Lets</div></div>
+		<div class="span4" style="background-color: #000;"><div class="smaller">** + High Street Window Advert<br> Board<br> Social Media<br> Accompanied Viewings</div></div>
+		</div>
+	
+	<small>	<div class="interested">
+	<h2>Interested?</h2>
+	
+	<p>Leave all your details below of the property you wish to advertise and once accepted, one of our members of staff will call you with regards to payment.</p>
+	
+	<p>You can pay over the phone by debit or credit card or within our letting shop in Wishaw but all property details must be entered online. Payments can be made through PayPal too. All ads will be kept online until one year or until the property has been let out, whichever is first. Customers will be charged VAT at 20%. </p>
+	</div>
+	
+	</div></small>	
+
+
+
+			
+	</div>
+	
+	<div id="main" class="span12">
+                {% block content %}{% endblock %}
+    </div><!-- /#main -->
+	
+	{{ wp.get_sidebar('content-bottom') }}
+
+
+    </div><!-- /.container -->
+
+        {{ wp.get_sidebar('bottom') }}
+
+</div><!-- /#content -->
+
+{{ wp.get_footer() }}
